@@ -79,7 +79,7 @@ public:
 	/////////////////////////////////////////////////////////////////////////////////////
 	MFRC522Extended() : MFRC522() {};
 	MFRC522Extended(uint8_t rst) : MFRC522(rst) {};
-	MFRC522Extended(uint8_t ss, uint8_t rst) : MFRC522(ss, rst) {};
+	MFRC522Extended(SPIClass* spi, uint8_t ss, uint8_t rst) : MFRC522(SPIClass* spi, ss, rst) {};
 	
 	/////////////////////////////////////////////////////////////////////////////////////
 	// Functions for communicating with PICCs
